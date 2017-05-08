@@ -9,7 +9,7 @@ void merge(int * arr, int low, int mid, int high){
 		R[j]=arr[mid+1+j];
 	i=0,j=0,k=low;
 	while(i<n1 && j<n2){
-		if(L[i]<R[j]){
+		if(L[i]>R[j]){
 			arr[k]=L[i];
 			i++;
 		}
